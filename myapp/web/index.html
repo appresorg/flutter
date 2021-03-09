@@ -25,6 +25,23 @@
 
   <title>myapp</title>
   <link rel="manifest" href="manifest.json">
+
+
+  <link href="https://smartdisk.github.io/appres-js/appres.min.css" rel="stylesheet">
+  <script src="https://smartdisk.github.io/appres-js/appres.min.js"></script>
+  <script>
+    function onAppResOptions() {
+      return {
+        pkey: "HjBKrdl0EdKNN4BEBfc3",
+        akey: "0d42929e-a2ef-4f49-a280-f14878278fe6",
+        cache: false,
+        langs_selector: {
+          langs_button_color: "white"
+        }
+      }
+    }
+  </script>
+
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -94,5 +111,6 @@
       loadMainDartJs();
     }
   </script>
+  <div class="appres-langs"></div>
 </body>
 </html>
